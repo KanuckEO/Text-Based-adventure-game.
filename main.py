@@ -5,10 +5,11 @@
 
 Score = 0
 Money = 2
-freinds = 0
+friends = 0
 Followers = 0
 
 user = (input("What is your name"))
+
 print("Welcome", user)
 if user == 'BlueRainbow':
     print("Oh sorry did not see you welcome Creator", user)
@@ -75,7 +76,7 @@ if ans4 == 'Pass':
     Score = Score + 1
     print(
         "Ok you passed but you could have gotten 1 million dollars and you are still a poor lone warrior. Here is you score Money and freinds",
-        Score, Money, freinds)
+        Score, Money, friends)
 
     ans5 = input(
         "You are still poor, You encounter a man in a yellow suit saying that he will make you immortal(take it/ Pass)"
@@ -94,10 +95,10 @@ if ans5 == 'Pass':
 if ans4 == 'Take the job':
     Money = Money + 1000000
     Score = Score + 1
-    freinds = freinds + 1
+    friends = friends + 1
     print(
         "You got the job and you got 1000000 dollars and now you have a freind called Tom Brady and now you are a famous servent. Here is you score Money and freinds",
-        Score, Money, freinds)
+        Score, Money, friends)
 
     ans6 = input(
         "Tom Brady died and you got a job as the CFO of Apple (accept/ Pass)")
@@ -105,10 +106,10 @@ if ans6 == 'accept':
     Money = Money + 900000000
     Score = Score + 1
     Followers = Followers + 100000000
-    freinds = freinds + 99999
+    friends = friends + 99999
     print(
         "You are even richer and you are a billionaire. You get a lot of freinds and followers Here is all your criteria",
-        freinds, Money, Followers, Score)
+        friends, Money, Followers, Score)
     ans7 = input(
         "You want to be the president of the US Do you want to? (yes/no)")
 
@@ -118,7 +119,7 @@ if ans7 == 'yes':
     Money + Money + 1000
     print(
         "You took the job and you are now the President of the United States Here is all your criteria",
-        freinds, Money, Followers, Score)
+        friends, Money, Followers, Score)
 
     Presi = input("You were rich and you were poor but you have to die one day and you did who do you want to give crown of US to")
 
@@ -131,7 +132,7 @@ if ans7 == 'no':
     Money + Money + 1000
     print(
         "You did not take the the withe house and you are not the president but you still have a job Here is all your criteria",
-        freinds, Money, Followers, Score)
+        friends, Money, Followers, Score)
     print("You also got stepped up to CEO because of the death of Tim Cook")
     CEO = input(
         "You were rich and you were poor but you have to die one day and you did who do you want to give crown of apple to"
@@ -148,3 +149,4 @@ if ans1 == 'run':
     print(
         "You ran away but the wolf is faster than you and you got killed. Here is your Score.",
         Score)
+        
