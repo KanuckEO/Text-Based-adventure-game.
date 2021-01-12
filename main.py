@@ -6,7 +6,7 @@
 Score = 0
 Money = 2
 
-user = (input("what is your name?"))
+user = (input("What is your name"))
 print("Welcome", user)
 if user == 'BlueRainbow':
     print("Oh sorry did not see you welcome Creator", user)
@@ -14,10 +14,10 @@ if user == 'KanuckEO':
     print("Oh sorry did not see you welcome Creator", user)
 if user == 'Qmlm':
     print("Oh sorry did not see you welcome Creator", user)
-if user == 'OmStar':
+if user == 'OmaStar':
     print("Oh sorry did not see you welcome Creator", user)
 yes = (input(
-    "Welcome to the Zombie adventure game would you like to start (yes)."))
+    "Welcome to the Text adventure game would you like to start (yes)."))
 if yes == 'yes':
     print("great!")
     print("I will give you a quick tour")
@@ -36,13 +36,9 @@ if ans1 == 'kill him':
     print(
         "You killed him from long range with a spear and now you have a little bit of food. Your Score is:",
         Score)
-    ans2 = input(
-        "You see a store and you have 2 dollars what do you do? (go in the store/ pass/ go armed)"
-    )
+    ans2 = input("You see a store and you have 2 dollars what do you do? (go in the store/ pass/ go armed)")
 if ans2 == 'go in the store':
-    print(
-        "You went in the store but you got shot because there was a guy with a gun. Here is you Score",
-        Score)
+    print("You went in the store but you got shot because there was a guy with a gun. Here is you Score", Score)
 if ans2 == 'pass':
     Score = Score - 1
     print("You passed and you did a bad thing because you were armed and you could have killed the man. there was a shooting there. Here is your Score",Score)
@@ -56,8 +52,17 @@ if ans3 == 'invite him':
 
 if ans3 == 'Pass on the party':
     print("You passed. Here is you Score and Money", Score, Money)
+  
+    ans4 = input("You find a rich guy on the street and he is offering you a job to be a servent (Pass/ Take the job)")
+
+if ans4 == 'Pass':
+    Score = Score + 1
+    print("Ok you passed but you could have gotten 1 million dollars and you are still a poor lone warrior")
+
+if ans4 == 'Take the job':
+    Money = Money + 1000000
+    Score = Score + 1
+    print("You got the job and you got 1000000 dollars and now you have a freind called Tom Brady and now you are a famous servent.")
 
 if ans1 == 'run':
-    print(
-        "You ran away but the wolf is faster than you and you got killed. Here is your Score.",
-        Score)
+    print("You ran away but the wolf is faster than you and you got killed. Here is your Score.",Score)
