@@ -4,6 +4,8 @@
 #OmaStark812
 
 Score = 0
+Money = 2
+
 user = (input("what is your name?"))
 print("Welcome", user)
 if user == 'BlueRainbow':
@@ -43,14 +45,17 @@ if ans2 == 'go in the store':
         Score)
 if ans2 == 'pass':
     Score = Score - 1
-    print(
-        "You passed and you did a bad thing because you were armed and you could have killed the man. there was a shooting there. Here is your Score",
-        Score)
+    print("You passed and you did a bad thing because you were armed and you could have killed the man. there was a shooting there. Here is your Score",Score)
 if ans2 == 'go armed':
     Score = Score + 5
-    print(
-        "You went in and you saw a man with a gun so you used your bazooka and killed him. You did a good thing u saved 1000000 people. Here is your Score",
-        Score)
+    print("You went in and you saw a man with a gun so you used your bazooka and killed him. You did a good thing u saved 1000000 people but you didnt buy anything. Here is your Score and Money",Score, Money)
+        
+    ans3 = input("You meet an archer. Do you want to invite him to your party but you goot to give him a dollar (invite him/ Pass on the party)")
+if ans3 == 'invite him':
+    print("you invited him and he got mad that he did not get the fruit punch he wanted and he killed you with his archering skills. Here is you Score and Money", Score, Money)
+
+if ans3 == 'Pass on the party':
+    print("You passed. Here is you Score and Money", Score, Money)
 
 if ans1 == 'run':
     print(
